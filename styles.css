@@ -64,6 +64,8 @@ button {
     font-family: 'Times New Roman', Times, serif;
     padding: 10px;
     cursor: pointer;
+    /*Making resume editable*/
+    outline: none;
 }
 
 button :hover {

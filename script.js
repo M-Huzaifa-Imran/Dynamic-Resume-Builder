@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var experience = document.getElementById('experience').value; // Ensure this ID is correct
         var skills = document.getElementById('skills').value;
         // Generate resume content dynamically
-        var resumeHtml = "\n        <h2><b>Resume</b></h2>\n        <h3>Personal Information</h3>\n        <p><b>Name: ".concat(name, "</b></p>\n        <p><b>Email: ").concat(email, "</b></p>\n        <p><b>Phone: ").concat(phone, "</b></p>\n        \n        <h3>Education</h3>\n        <p>").concat(education, "</p>\n        \n        <h3>Experience</h3>\n        <p>").concat(experience, "</p>\n        \n        <h3>Skills</h3>\n        <p>").concat(skills, "</p>");
+        var resumeHtml = "\n        <h2><b>Editable Resume</b></h2>\n        <h3>Personal Information</h3>\n        <p><b><span contenteditable=\"true\">Name: ".concat(name, "</span></b></p>\n        <p><b><span contenteditable=\"true\">Email: ").concat(email, "</span></b></p>\n        <p><b><span contenteditable=\"true\">Phone: ").concat(phone, "</span></b></p>\n        \n        <h3>Education</h3>\n        <p> <span contenteditable=\"true\"> ").concat(education, " </span></p>\n        \n        <h3>Experience</h3>\n        <p> <span contenteditable=\"true\"> ").concat(experience, "</span></p>\n        \n        <h3>Skills</h3>\n        <p> <span contenteditable=\"true\"> ").concat(skills, "</span></p>");
         // Display the resume in the area
         if (resumeDisplayElement) {
             resumeDisplayElement.innerHTML = resumeHtml;

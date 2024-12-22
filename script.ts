@@ -17,20 +17,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Generate resume content dynamically
         const resumeHtml = `
-        <h2><b>Resume</b></h2>
+        <h2><b>Editable Resume</b></h2>
         <h3>Personal Information</h3>
-        <p><b>Name: ${name}</b></p>
-        <p><b>Email: ${email}</b></p>
-        <p><b>Phone: ${phone}</b></p>
+        <p><b><span contenteditable="true">Name: ${name}</span></b></p>
+        <p><b><span contenteditable="true">Email: ${email}</span></b></p>
+        <p><b><span contenteditable="true">Phone: ${phone}</span></b></p>
         
         <h3>Education</h3>
-        <p>${education}</p>
+        <p> <span contenteditable="true"> ${education} </span></p>
         
         <h3>Experience</h3>
-        <p>${experience}</p>
+        <p> <span contenteditable="true"> ${experience}</span></p>
         
         <h3>Skills</h3>
-        <p>${skills}</p>`;
+        <p> <span contenteditable="true"> ${skills}</span></p>`;
 
         // Display the resume in the area
         if (resumeDisplayElement) {
